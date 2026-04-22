@@ -1,0 +1,14 @@
+Source: libtimewait
+Section: libs
+Priority: optional
+Standards-Version: 0.1.0
+Maintainer: Unmaintained <nobody@nowhere.com>
+Build-Depends: debhelper (>= 11), bats, strace, netcat-openbsd
+Homepage: https://github.com/tclaret/libtimewait
+
+Package: libtimewait
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libkeepalive0
+Description: LD_PRELOAD library for setting SO_REUSEADDR and SO_REUSEPORT socket options
+ Debian packaging for libtimewait
