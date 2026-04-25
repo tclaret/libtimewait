@@ -1,5 +1,8 @@
 Inspired by libtcpkeepalive, we're defaulting the "so_reuse*" socket options.
 
+"libtcpkeepalive
+ Michael Santos https://github.com/msantos/libkeepalive
+""
 
 
 # SYNOPSIS
@@ -29,6 +32,10 @@ required for enabling SO_REUSEADDR and SO_REUSEPORT. Inspired by:
 
 * https://blog.cloudflare.com/when-tcp-sockets-refuse-to-die/
 * https://blog.cloudflare.com/how-to-stop-running-out-of-ephemeral-ports-and-start-to-love-long-lived-connections/
+* https://stackoverflow.com/questions/14388706/how-do-so-reuseaddr-and-so-reuseport-differ
+
+golang reuseport
+* https://pkg.go.dev/github.com/libp2p/go-reuseport
 
 `libtimewait` works by intercepting calls to `connect(2)` using
 `LD_PRELOAD`. Before `connect(2)`ing, `setsockopt(2)` is called using
@@ -71,8 +78,6 @@ Setting options to 0 will use the system default.
 ```
 LIBTIMEWAIT_DEBUG=1
 ```
-
-
 
 ## libtimewait, libtimewait_socket
 
