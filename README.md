@@ -30,6 +30,7 @@ libtimewait: set SO_REUSEADDR and SO_REUSEPORT socket options
 libtimewait is a small library for setting various socket options
 required for enabling SO_REUSEADDR and SO_REUSEPORT. Inspired by:
 
+* https://totozhang.github.io/2016-01-31-tcp-timewait-status/
 * https://blog.cloudflare.com/when-tcp-sockets-refuse-to-die/
 * https://blog.cloudflare.com/how-to-stop-running-out-of-ephemeral-ports-and-start-to-love-long-lived-connections/
 * https://stackoverflow.com/questions/14388706/how-do-so-reuseaddr-and-so-reuseport-differ
